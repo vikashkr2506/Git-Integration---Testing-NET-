@@ -1,3 +1,4 @@
+# Test ****************
 import pandas as pd
 from codex_widget_factory_lite.visuals.grid_table import GridTable
 # Hardcoding a sample dataframe here, please ingest your dataset or create
@@ -10,7 +11,6 @@ grid_options = {
     "paginationSettings": {"rowsPerPageOptions": [10, 20, 30], "rowsPerPage": 10},
     "quickSearch": True
 }
-# test
 # Making 'Age' column sortable
 col_props = {'Age':{'sortable':True}}
 gridtable_output=GridTable(df = sample_df, col_props=col_props, grid_options=grid_options)
